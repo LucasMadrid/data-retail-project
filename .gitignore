@@ -160,3 +160,35 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# vscode
+.vscode
+
+
+# keys
+include/gcp/gcp_service_account.json
+
+#old versions
+.old_version
+
+
+#DBT
+
+target/
+dbt_modules/
+dbt_packages/
+logs/
+venv/
+__pycache__
+.tox/
+/.pytest_cache/
+
+
+# Ignore all directories that start with 'env-' and can have any name after
+env*/
+
+# Do not ignore .env files in any directory and do not ignore .env directories
+!*/.env/
+
+# But explicitly ignore test.env files
+test.env

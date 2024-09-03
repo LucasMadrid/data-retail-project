@@ -1,0 +1,14 @@
+# profiles.yml
+
+online_retail:
+ target: dev
+ outputs:
+  dev:
+    type: bigquery
+    method: service-account
+    keyfile: /usr/local/airflow/include/gcp/gcp_service_account.json
+    project: imposing-racer-433911-s4
+    dataset: online_retail
+    threads: 1
+    timeout_seconds: 300
+    location: US

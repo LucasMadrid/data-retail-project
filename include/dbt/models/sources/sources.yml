@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: online_retail
+    database: imposing-racer-433911-s4
+
+    tables:
+      - name: raw_invoices
+      - name: country 
